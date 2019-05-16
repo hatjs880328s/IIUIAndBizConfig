@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IIUIAndBizConfig_Example' do
+  pod 'IIUIAndBizConfig', :path => '../'
+
+  target 'IIUIAndBizConfig_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

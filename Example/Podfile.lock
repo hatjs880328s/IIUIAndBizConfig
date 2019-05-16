@@ -1,0 +1,89 @@
+PODS:
+  - IIBLL (0.2.2):
+    - IIBLL/BeeHive (= 0.2.2)
+    - IIBLL/IBLL (= 0.2.2)
+  - IIBLL/BeeHive (0.2.2)
+  - IIBLL/IBLL (0.2.2):
+    - IIBLL/BeeHive
+  - III18N (0.8.0)
+  - IIOCUtis (0.7.0)
+  - IISwiftBaseUti (1.3.9):
+    - III18N
+    - IISwiftBaseUti/IIAspects (= 1.3.9)
+    - IISwiftBaseUti/IIBaseUti (= 1.3.9)
+    - IISwiftBaseUti/IICacheStorage (= 1.3.9)
+    - IISwiftBaseUti/IIComponent (= 1.3.9)
+    - IISwiftBaseUti/IICoreExtension (= 1.3.9)
+    - IISwiftBaseUti/IIHardWareAuthRequest (= 1.3.9)
+    - IISwiftBaseUti/IIRecognition (= 1.3.9)
+    - IISwiftBaseUti/YYCache (= 1.3.9)
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IIAspects (1.3.9):
+    - III18N
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IIBaseUti (1.3.9):
+    - III18N
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IICacheStorage (1.3.9):
+    - III18N
+    - IISwiftBaseUti/YYCache
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IIComponent (1.3.9):
+    - III18N
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IICoreExtension (1.3.9):
+    - III18N
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IIHardWareAuthRequest (1.3.9):
+    - III18N
+    - IISwiftBaseUti/IIBaseUti
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IIRecognition (1.3.9):
+    - III18N
+    - IISwiftBaseUti/IICoreExtension
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/YYCache (1.3.9):
+    - III18N
+    - SnapKit (~> 4.2.0)
+  - IIUIAndBizConfig (0.1.0):
+    - IIBLL
+    - IIOCUtis
+    - IISwiftBaseUti
+    - IIUIAndBizConfig/BizConfig (= 0.1.0)
+    - IIUIAndBizConfig/UIConfig (= 0.1.0)
+  - IIUIAndBizConfig/BizConfig (0.1.0):
+    - IIBLL
+    - IIOCUtis
+    - IISwiftBaseUti
+  - IIUIAndBizConfig/UIConfig (0.1.0):
+    - IIBLL
+    - IIOCUtis
+    - IISwiftBaseUti
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - IIUIAndBizConfig (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IIBLL
+    - III18N
+    - IIOCUtis
+    - IISwiftBaseUti
+    - SnapKit
+
+EXTERNAL SOURCES:
+  IIUIAndBizConfig:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IIBLL: 49bc6e6189b49a1fdfda9f748d922f2e127016fc
+  III18N: 89145d37dfb9153c1f6a4243657d07dd8033dc1b
+  IIOCUtis: 4f464b419af18d9dd1546b821f0c9c45eef7c594
+  IISwiftBaseUti: 523d24082a6f59748537c6c6085186ac605c9a2c
+  IIUIAndBizConfig: 56bfc194e900f23ed3bbb90ad5c83d0403504c4f
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: c6a76cc1de546943c3e40298942eeed2a5cd5a05
+
+COCOAPODS: 1.6.1
