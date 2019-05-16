@@ -24,7 +24,7 @@ import IIBLL
  
 */
 
-@objc class APPUIConfigManager: NSObject {
+public class APPUIConfigManager: NSObject {
 
     /// 对外暴露的切换主题执行类
     @objc public var actionForLogin: AnyClass?
@@ -50,16 +50,16 @@ import IIBLL
     }
 
     ///初始化主题色
-    @objc func initColorTheme() {
-        let schemeId: ColorSchemeTheme = self.getCurrentColorThemeId()
+    @objc public func initColorTheme() {
+        let schemeId: ColorSchemeTheme = ColorSchemeTheme(rawValue: self.getCurrentColorThemeId()) ?? ColorSchemeTheme.themeWhite
         let colorScheme: ColorScheme = ColorSchemeData.sharedInstance().getColorScheme(byId: schemeId)
         
         self.changeAPPUIConfigWithColorScheme(colorScheme: colorScheme)
     }
 
-    @objc func changeAPPUIConfigWithColorScheme(colorScheme: ColorScheme) {
+    @objc public func changeAPPUIConfigWithColorScheme(colorScheme: ColorScheme) {
         //APPUIConfig.cloudThemeColor = colorScheme.navCharColor
-        IIImage.themeType = self.getCurrentColorThemeId().rawValue
+        IIImage.themeType = self.getCurrentColorThemeId()
         //UI3.0
         APPUIConfig.newBgColor = colorScheme.bgColor
         APPUIConfig.cloudThemeColorVersion3 = colorScheme.navColor
@@ -80,59 +80,61 @@ import IIBLL
     }
     
     /// 主题色修改并更改rootviewcontroller
-    @objc func themeColorProgress(colorScheme: ColorScheme) {
+    @objc public func themeColorProgress(colorScheme: ColorScheme) {
         self.changeAPPUIConfigWithColorScheme(colorScheme: colorScheme)
         self.changeRootVc()
     }
 
     /// 获取当前颜色主题类别 [默认是白色主题]
-    @objc func getCurrentColorThemeId() -> ColorSchemeTheme {
-        guard let themeKey = UserDefaults.standard.string(forKey: kAppSkinName) else { return ColorSchemeTheme.themeWhite }
+    @objc public func getCurrentColorThemeId() -> Int {
+        guard let themeKey = UserDefaults.standard.string(forKey: kAppSkinName) else { return ColorSchemeTheme.themeWhite.rawValue }
         return self.getColorSchemeTheme(themeName: themeKey)
     }
 
     ///保存当前颜色主题
-    @objc func saveColorTheme(colorScheme: ColorScheme) {
-        UserDefaults.standard.setValue(self.getColorThemeString(schemeId: colorScheme.schemeId), forKey: kAppSkinName)
+    @objc public func saveColorTheme(colorScheme: ColorScheme) {
+        UserDefaults.standard.setValue(self.getColorThemeString(schemeId: colorScheme.schemeId.rawValue), forKey: kAppSkinName)
         UserDefaults.standard.synchronize()
     }
 
     //枚举转文字
-    @objc func getColorThemeString(schemeId: ColorSchemeTheme) -> String {
+    @objc public func getColorThemeString(schemeId: Int) -> String {
         switch schemeId {
-        case ColorSchemeTheme.themeWhite :
+        case ColorSchemeTheme.themeWhite.rawValue :
             return "white"
-        case ColorSchemeTheme.themeBlue :
+        case ColorSchemeTheme.themeBlue.rawValue:
             return "blue"
-        case ColorSchemeTheme.themeGray :
+        case ColorSchemeTheme.themeGray.rawValue :
             return "gray"
+        default: return ""
         }
     }
 
     //文字转枚举
-    @objc func getColorSchemeTheme(themeName: String) -> ColorSchemeTheme {
+    @objc public func getColorSchemeTheme(themeName: String) -> Int {
         switch themeName {
         case "white":
-            return ColorSchemeTheme.themeWhite
+            return ColorSchemeTheme.themeWhite.rawValue
         case "blue":
-            return ColorSchemeTheme.themeBlue
+            return ColorSchemeTheme.themeBlue.rawValue
         case "gray":
-            return ColorSchemeTheme.themeGray
+            return ColorSchemeTheme.themeGray.rawValue
         default:
-            return ColorSchemeTheme.themeWhite
+            return ColorSchemeTheme.themeWhite.rawValue
         }
     }
 
     //显示的名称
-    @objc func getShowTitle(schemeId: ColorSchemeTheme) -> String {
+    @objc public func getShowTitle(schemeId: Int) -> String {
         var title: String = getI18NStr(key: "changeSkin_colorScheme_white")
         switch schemeId {
-        case ColorSchemeTheme.themeWhite :
+        case ColorSchemeTheme.themeWhite.rawValue :
             title = getI18NStr(key: "changeSkin_colorScheme_white")
-        case ColorSchemeTheme.themeBlue :
+        case ColorSchemeTheme.themeBlue.rawValue :
             return getI18NStr(key: "changeSkin_colorScheme_blue")
-        case ColorSchemeTheme.themeGray :
+        case ColorSchemeTheme.themeGray.rawValue :
             return getI18NStr(key: "changeSkin_colorScheme_gray")
+        default: return ""
         }
         return title
     }

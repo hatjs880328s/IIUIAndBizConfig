@@ -1,4 +1,4 @@
-framework module IIOCUtis {
+module IIOCUtis {
   umbrella header "IIOCUtis-umbrella.h"
 
   export *

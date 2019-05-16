@@ -13,5 +13,5 @@ import Foundation
  
  */
 
-class APPBizConfigManager: NSObject {
+public class APPBizConfigManager: NSObject {
 }

@@ -14,8 +14,8 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C164E7EF925D4F239509B06D2929A533"
-               BuildableName = "IIOCUtis.framework"
+               BlueprintIdentifier = "CD6056824EA560ADBD3F9C2120DC8485"
+               BuildableName = "libIIOCUtis.a"
                BlueprintName = "IIOCUtis"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
