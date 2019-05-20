@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IIUIAndBizConfig'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'UIConfig  and BIZConfig'
 
 # This description is used to generate tags and improve search results.
@@ -51,5 +51,5 @@ UIConfig  and BIZConfig
   
   s.dependency 'IISwiftBaseUti'
   s.dependency 'IIBLL'
-  s.dependency 'IIOCUtis'
+  # s.dependency 'IIOCUtis'
 end

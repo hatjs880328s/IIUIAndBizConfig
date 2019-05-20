@@ -6,7 +6,6 @@ PODS:
   - IIBLL/IBLL (0.2.2):
     - IIBLL/BeeHive
   - III18N (0.8.0)
-  - IIOCUtis (0.7.0)
   - IISwiftBaseUti (1.3.9):
     - III18N
     - IISwiftBaseUti/IIAspects (= 1.3.9)
@@ -45,19 +44,16 @@ PODS:
   - IISwiftBaseUti/YYCache (1.3.9):
     - III18N
     - SnapKit (~> 4.2.0)
-  - IIUIAndBizConfig (0.1.1):
+  - IIUIAndBizConfig (0.1.2):
     - IIBLL
-    - IIOCUtis
     - IISwiftBaseUti
-    - IIUIAndBizConfig/BizConfig (= 0.1.1)
-    - IIUIAndBizConfig/UIConfig (= 0.1.1)
-  - IIUIAndBizConfig/BizConfig (0.1.1):
+    - IIUIAndBizConfig/BizConfig (= 0.1.2)
+    - IIUIAndBizConfig/UIConfig (= 0.1.2)
+  - IIUIAndBizConfig/BizConfig (0.1.2):
     - IIBLL
-    - IIOCUtis
     - IISwiftBaseUti
-  - IIUIAndBizConfig/UIConfig (0.1.1):
+  - IIUIAndBizConfig/UIConfig (0.1.2):
     - IIBLL
-    - IIOCUtis
     - IISwiftBaseUti
   - SnapKit (4.2.0)
 
@@ -68,7 +64,6 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IIBLL
     - III18N
-    - IIOCUtis
     - IISwiftBaseUti
     - SnapKit
 
@@ -79,9 +74,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   IIBLL: 49bc6e6189b49a1fdfda9f748d922f2e127016fc
   III18N: 89145d37dfb9153c1f6a4243657d07dd8033dc1b
-  IIOCUtis: 4f464b419af18d9dd1546b821f0c9c45eef7c594
   IISwiftBaseUti: 523d24082a6f59748537c6c6085186ac605c9a2c
-  IIUIAndBizConfig: 7146eb3b16c91bf00f1e83fd16aadb13a07c88da
+  IIUIAndBizConfig: d630c6298ab13509caca782f06ce4eb737fc592d
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: f5322abfe2df3c80ff4d4381c607d023594b0452

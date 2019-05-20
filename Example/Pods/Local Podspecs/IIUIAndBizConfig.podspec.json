@@ -1,6 +1,6 @@
 {
   "name": "IIUIAndBizConfig",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "UIConfig  and BIZConfig",
   "description": "IIUIAndBizConfig\nUIConfig  and BIZConfig",
   "homepage": "https://github.com/hatjs880328s/IIUIAndBizConfig",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IIUIAndBizConfig.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
@@ -24,9 +24,6 @@
 
     ],
     "IIBLL": [
-
-    ],
-    "IIOCUtis": [
 
     ]
   },
