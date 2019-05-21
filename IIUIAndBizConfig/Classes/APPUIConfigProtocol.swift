@@ -15,7 +15,7 @@ import UIKit
 // swift - version
 public var APPUIConfigX: APPUIConfigProtocol.Type!
 
-@objc public protocol APPUIConfigProtocol: NSObjectProtocol {
+public protocol APPUIConfigProtocol {
 
     /// 跟踪导航栏颜色
     static var navigationBarColor: UIColor { get }
