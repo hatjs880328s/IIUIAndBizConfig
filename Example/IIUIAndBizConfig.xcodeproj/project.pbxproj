@@ -170,7 +170,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				69B59E3D6244B7A0811AC586 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,28 +260,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		69B59E3D6244B7A0811AC586 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IIUIAndBizConfig_Example/Pods-IIUIAndBizConfig_Example-resources.sh",
-				"${PODS_ROOT}/IIBLL/IIBLL/Classes/BeeHive/BeeHive.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BeeHive.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IIUIAndBizConfig_Example/Pods-IIUIAndBizConfig_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7B40E547DCA3CA14E42C3913 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

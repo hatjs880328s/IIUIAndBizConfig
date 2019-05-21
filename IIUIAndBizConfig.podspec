@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IIUIAndBizConfig'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'UIConfig  and BIZConfig'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ UIConfig  and BIZConfig
 
   s.ios.deployment_target = '8.0'
 
-  # s.source_files = 'IIUIAndBizConfig/Classes/**/*'
+  s.source_files = 'IIUIAndBizConfig/Classes/**/*'
   
   # s.resource_bundles = {
   #   'IIUIAndBizConfig' => ['IIUIAndBizConfig/Assets/*.png']
@@ -40,16 +40,7 @@ UIConfig  and BIZConfig
 
   s.swift_version = '4.2'
 
-  s.subspec 'BizConfig' do |ss|
-      ss.source_files = 'IIUIAndBizConfig/Classes/BizConfig/*.*'
-  end
-
-  s.subspec 'UIConfig' do |ss|
-      ss.source_files = 'IIUIAndBizConfig/Classes/UIConfig/*.*'
-  end
-
   
-  s.dependency 'IISwiftBaseUti'
-  s.dependency 'IIBLL'
+  
   # s.dependency 'IIOCUtis'
 end

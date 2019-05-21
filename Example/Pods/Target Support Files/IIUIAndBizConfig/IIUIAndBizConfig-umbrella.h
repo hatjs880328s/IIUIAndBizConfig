@@ -10,8 +10,6 @@
 #endif
 #endif
 
-#import "ColorScheme.h"
-#import "ColorSchemeData.h"
 
 FOUNDATION_EXPORT double IIUIAndBizConfigVersionNumber;
 FOUNDATION_EXPORT const unsigned char IIUIAndBizConfigVersionString[];
