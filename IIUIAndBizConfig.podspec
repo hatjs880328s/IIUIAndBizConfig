@@ -7,40 +7,49 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'IIUIAndBizConfig'
-  s.version          = '0.1.7'
-  s.summary          = 'UIConfig  and BIZConfig'
+    s.name             = 'IIUIAndBizConfig'
+    s.version          = '0.1.8'
+    s.summary          = 'UIConfig  and BIZConfig'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+    # This description is used to generate tags and improve search results.
+    #   * Think: What does it do? Why did you write it? What is the focus?
+    #   * Try to keep it short, snappy and to the point.
+    #   * Write the description between the DESC delimiters below.
+    #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-IIUIAndBizConfig
-UIConfig  and BIZConfig
-                       DESC
+    s.description      = <<-DESC
+    IIUIAndBizConfig
+    UIConfig  and BIZConfig
+    DESC
 
-  s.homepage         = 'https://github.com/hatjs880328s/IIUIAndBizConfig'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hatjs880328s' => 'shanwzh@inspur.com' }
-  s.source           = { :git => 'https://github.com/hatjs880328s/IIUIAndBizConfig.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.homepage         = 'https://github.com/hatjs880328s/IIUIAndBizConfig'
+    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+    s.author           = { 'hatjs880328s' => 'shanwzh@inspur.com' }
+    s.source           = { :git => 'https://github.com/hatjs880328s/IIUIAndBizConfig.git', :tag => s.version.to_s }
+    # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+    s.ios.deployment_target = '8.0'
 
-  s.source_files = 'IIUIAndBizConfig/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'IIUIAndBizConfig' => ['IIUIAndBizConfig/Assets/*.png']
-  # }
+    # s.source_files = 'IIUIAndBizConfig/Classes/**/*'
+
+    # s.resource_bundles = {
+    #   'IIUIAndBizConfig' => ['IIUIAndBizConfig/Assets/*.png']
+    # }
 
 
-  s.swift_version = '4.2'
+    s.swift_version = '4.2'
 
-  
-  
-  # s.dependency 'IIOCUtis'
+    s.subspec 'BizConfig' do |ss|
+        ss.source_files = 'IIUIAndBizConfig/Classes/BizConfig/*.*'
+    end
+
+    s.subspec 'UIConfig' do |ss|
+        ss.source_files = 'IIUIAndBizConfig/Classes/UIConfig/*.*'
+    end
+
+
+    s.dependency 'IISwiftBaseUti'
+    s.dependency 'IIBLL'
+    # s.dependency 'IIOCUtis'
 end
