@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'IIUIAndBizConfig'
-    s.version          = '0.1.8'
+    s.version          = '0.1.9'
     s.summary          = 'UIConfig  and BIZConfig'
 
     # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
     # }
 
 
-    s.swift_version = '4.2'
+    s.swift_version = '5.0'
 
     s.subspec 'BizConfig' do |ss|
         ss.source_files = 'IIUIAndBizConfig/Classes/BizConfig/*.*'
