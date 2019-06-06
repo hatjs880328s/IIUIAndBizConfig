@@ -77,6 +77,7 @@ public class APPUIConfigManager: NSObject {
         APPUIConfig.appFooterWeight = colorScheme.appFooterWeight
         APPUIConfig.appLineHeaderWeight = colorScheme.appLineHeaderWeight
         APPUIConfig.appLabelHeaderWeight = colorScheme.appLabelHeaderWeight
+        APPUIConfig.workNaviSubTextColor = colorScheme.workNaviSubTextColor
     }
     
     /// 主题色修改并更改rootviewcontroller

@@ -1556,7 +1556,7 @@
 			};
 			name = Release;
 		};
-		79D2F9AC81F40946EF276397D1B85E0B /* Debug */ = {
+		53F7EE9862441A6070FDDE31AD9ECD38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3EFF609126B17304B800C97B9F2DDA94 /* IIUIAndBizConfig.xcconfig */;
 			buildSettings = {
@@ -1576,10 +1576,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		7B565137DBDEB7775BFE23E57626F511 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1650,6 +1651,31 @@
 			};
 			name = Debug;
 		};
+		95BC6831FF10C533E53DEE8EE976AC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFF609126B17304B800C97B9F2DDA94 /* IIUIAndBizConfig.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/IIUIAndBizConfig/IIUIAndBizConfig-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/IIUIAndBizConfig/IIUIAndBizConfig.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = IIUIAndBizConfig;
+				PRODUCT_NAME = IIUIAndBizConfig;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		9731AE6FCB3E888CF75F41F45AF2C11A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53B7629028D81E6C6C346E07266F0322 /* IIBLL.xcconfig */;
@@ -1700,32 +1726,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		A0F7015F13D5785F49E231010C8A84AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EFF609126B17304B800C97B9F2DDA94 /* IIUIAndBizConfig.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/IIUIAndBizConfig/IIUIAndBizConfig-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MODULEMAP_FILE = Headers/Public/IIUIAndBizConfig/IIUIAndBizConfig.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = IIUIAndBizConfig;
-				PRODUCT_NAME = IIUIAndBizConfig;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1945,8 +1945,8 @@
 		455F0F964E4E5D49E16C0FA6E9209298 /* Build configuration list for PBXNativeTarget "IIUIAndBizConfig" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79D2F9AC81F40946EF276397D1B85E0B /* Debug */,
-				A0F7015F13D5785F49E231010C8A84AB /* Release */,
+				95BC6831FF10C533E53DEE8EE976AC5E /* Debug */,
+				53F7EE9862441A6070FDDE31AD9ECD38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,6 @@
 {
   "name": "IIUIAndBizConfig",
-  "version": "0.1.8",
+  "version": "0.1.11",
   "summary": "UIConfig  and BIZConfig",
   "description": "IIUIAndBizConfig\nUIConfig  and BIZConfig",
   "homepage": "https://github.com/hatjs880328s/IIUIAndBizConfig",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/hatjs880328s/IIUIAndBizConfig.git",
-    "tag": "0.1.8"
+    "tag": "0.1.11"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "swift_versions": "4.2",
+  "swift_versions": "5.0",
   "dependencies": {
     "IISwiftBaseUti": [
 
@@ -37,5 +37,5 @@
       "source_files": "IIUIAndBizConfig/Classes/UIConfig/*.*"
     }
   ],
-  "swift_version": "4.2"
+  "swift_version": "5.0"
 }

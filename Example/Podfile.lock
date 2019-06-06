@@ -44,15 +44,15 @@ PODS:
   - IISwiftBaseUti/YYCache (1.3.11):
     - III18N
     - SnapKit (~> 4.2.0)
-  - IIUIAndBizConfig (0.1.8):
+  - IIUIAndBizConfig (0.1.11):
     - IIBLL
     - IISwiftBaseUti
-    - IIUIAndBizConfig/BizConfig (= 0.1.8)
-    - IIUIAndBizConfig/UIConfig (= 0.1.8)
-  - IIUIAndBizConfig/BizConfig (0.1.8):
+    - IIUIAndBizConfig/BizConfig (= 0.1.11)
+    - IIUIAndBizConfig/UIConfig (= 0.1.11)
+  - IIUIAndBizConfig/BizConfig (0.1.11):
     - IIBLL
     - IISwiftBaseUti
-  - IIUIAndBizConfig/UIConfig (0.1.8):
+  - IIUIAndBizConfig/UIConfig (0.1.11):
     - IIBLL
     - IISwiftBaseUti
   - SnapKit (4.2.0)
@@ -75,9 +75,9 @@ SPEC CHECKSUMS:
   IIBLL: 056c11f3635555a4bd2b595b95f88955866c6ae8
   III18N: 89145d37dfb9153c1f6a4243657d07dd8033dc1b
   IISwiftBaseUti: 0f6dbe79e69b319c86996731949b14ed063ad48a
-  IIUIAndBizConfig: 329d65219b607380aeb1e52b12576663fca62e5a
+  IIUIAndBizConfig: c0057683d4714feb5d2ca026e29cab4ec0de9c93
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: f5322abfe2df3c80ff4d4381c607d023594b0452
 
-COCOAPODS: 1.7.0.rc.2
+COCOAPODS: 1.7.0
