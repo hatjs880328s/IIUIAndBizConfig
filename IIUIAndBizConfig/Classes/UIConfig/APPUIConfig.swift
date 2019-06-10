@@ -125,7 +125,7 @@ public class APPUIConfig: NSObject {
     @objc public static let calendarTimeTextColor = UIColor(red: 136 / 255, green: 136 / 255, blue: 136 / 255, alpha: 1)
 
     ///工作Navi未选中状态颜色
-    @objc static var workNaviSubTextColor = UIColor(red: 136 / 255, green: 136 / 255, blue: 136 / 255, alpha: 1)
+    @objc public static var workNaviSubTextColor = UIColor(red: 136 / 255, green: 136 / 255, blue: 136 / 255, alpha: 1)
 
     ///底部TabBar文字 普通状态/选中状态 颜色
     @objc public static var tabBarTextNormalColor = UIColor(red: 151 / 255, green: 158 / 255, blue: 163 / 255, alpha: 1)
