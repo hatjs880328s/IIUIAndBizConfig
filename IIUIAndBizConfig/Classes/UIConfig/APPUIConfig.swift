@@ -140,6 +140,9 @@ public class APPUIConfig: NSObject {
     ///搜索Bar背景色
     @objc public static var searchBarNewBgColor = UIColor(red: 242 / 255, green: 242 / 255, blue: 242 / 255, alpha: 1)
 
+    ///遮罩层颜色
+    @objc public static var shadowColor = UIColor(red: 0 / 255, green: 0 / 255, blue: 0 / 255, alpha: 0.2)
+
     /// 缩放比例（目前默认为1）
     @objc public static let sizeScale: CGFloat = UIScreen.main.bounds.width / 375.0
 
