@@ -16,5 +16,5 @@ import Foundation
 public class APPBizConfig: NSObject {
     
     /// 声网 key
-    public static let agoraAppId = "24716f61c0be41d592c03d6c86a2a4e8"
+    public static let agoraAppId = "a6aec906dc794e799bf08c332039376e"
 }
